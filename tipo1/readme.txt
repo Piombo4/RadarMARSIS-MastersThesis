@@ -1,4 +1,4 @@
-/Tirocinio contiene tutti gli script di MATLAB. Il metodo di filtraggio sviluppato è nel file Tirocinio/IDR/idr_filter_single.m
+../Tirocinio contiene tutti gli script di MATLAB. Il metodo di filtraggio sviluppato è nel file Tirocinio/IDR/idr_filter_single.m
 
 /tipo1 è una cartella che contiene: /runs/detect/train -> il modello YOLO addestrato 
                                     /scripts -> gli scripts creati
