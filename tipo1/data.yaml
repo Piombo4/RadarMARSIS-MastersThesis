@@ -1,0 +1,6 @@
+train: D:/dataset/tipo1/YOLOdata/training/images
+val: D:/dataset/tipo1/YOLOdata/validation/images
+test: D:/dataset/tipo1/YOLOdata/test/images
+
+names:
+  - dot

@@ -1,0 +1,39 @@
+function [ RecordBytes, Parameter, OffsetBytes, OffsetBits, Items, Precision, OutputPrecision, MachineFormat, ItemBytes, ItemBits ] = MARSIS_I_SS3_TRK_RAW
+
+RecordBytes = 15927;
+
+Parameter       = cell( 30, 1 );
+Precision       = cell( 30, 1 );
+OutputPrecision = cell( 30, 1 );
+MachineFormat   = cell( 30, 1 );
+
+Parameter{ 01 } =          'CENTRAL_FREQUENCY'; OffsetBytes( 01 ) = 00000; OffsetBits( 01 ) = 0; Items( 01 ) = 002; Precision{ 01 } = 'float32'; OutputPrecision{ 01 } = 'float32'; MachineFormat{ 01 } = 'ieee-le'; ItemBytes( 01 ) = 4; ItemBits( 01 ) = 0;
+Parameter{ 02 } =                      'SLOPE'; OffsetBytes( 02 ) = 00008; OffsetBits( 02 ) = 0; Items( 02 ) = 001; Precision{ 02 } = 'float32'; OutputPrecision{ 02 } = 'float32'; MachineFormat{ 02 } = 'ieee-le'; ItemBytes( 02 ) = 4; ItemBits( 02 ) = 0;
+Parameter{ 03 } =           'SCET_FRAME_WHOLE'; OffsetBytes( 03 ) = 00012; OffsetBits( 03 ) = 0; Items( 03 ) = 001; Precision{ 03 } =  'uint32'; OutputPrecision{ 03 } =  'uint32'; MachineFormat{ 03 } = 'ieee-le'; ItemBytes( 03 ) = 4; ItemBits( 03 ) = 0;
+Parameter{ 04 } =            'SCET_FRAME_FRAC'; OffsetBytes( 04 ) = 00016; OffsetBits( 04 ) = 0; Items( 04 ) = 001; Precision{ 04 } =  'uint16'; OutputPrecision{ 04 } =  'uint16'; MachineFormat{ 04 } = 'ieee-le'; ItemBytes( 04 ) = 2; ItemBits( 04 ) = 0;
+Parameter{ 05 } =                 'H_SCET_PAR'; OffsetBytes( 05 ) = 00018; OffsetBits( 05 ) = 0; Items( 05 ) = 001; Precision{ 05 } = 'float32'; OutputPrecision{ 05 } = 'float32'; MachineFormat{ 05 } = 'ieee-le'; ItemBytes( 05 ) = 4; ItemBits( 05 ) = 0;
+Parameter{ 06 } =                'VT_SCET_PAR'; OffsetBytes( 06 ) = 00022; OffsetBits( 06 ) = 0; Items( 06 ) = 001; Precision{ 06 } = 'float32'; OutputPrecision{ 06 } = 'float32'; MachineFormat{ 06 } = 'ieee-le'; ItemBytes( 06 ) = 4; ItemBits( 06 ) = 0;
+Parameter{ 07 } =                'VR_SCET_PAR'; OffsetBytes( 07 ) = 00026; OffsetBits( 07 ) = 0; Items( 07 ) = 001; Precision{ 07 } = 'float32'; OutputPrecision{ 07 } = 'float32'; MachineFormat{ 07 } = 'ieee-le'; ItemBytes( 07 ) = 4; ItemBits( 07 ) = 0;
+Parameter{ 08 } =           'DELTA_S_SCET_PAR'; OffsetBytes( 08 ) = 00030; OffsetBits( 08 ) = 0; Items( 08 ) = 001; Precision{ 08 } = 'float32'; OutputPrecision{ 08 } = 'float32'; MachineFormat{ 08 } = 'ieee-le'; ItemBytes( 08 ) = 4; ItemBits( 08 ) = 0;
+Parameter{ 09 } =                'NA_SCET_PAR'; OffsetBytes( 09 ) = 00034; OffsetBits( 09 ) = 0; Items( 09 ) = 002; Precision{ 09 } =  'uint16'; OutputPrecision{ 09 } =  'uint16'; MachineFormat{ 09 } = 'ieee-le'; ItemBytes( 09 ) = 2; ItemBits( 09 ) = 0;
+Parameter{ 10 } =            'ECHO_MODULUS_B1'; OffsetBytes( 10 ) = 00038; OffsetBits( 10 ) = 0; Items( 10 ) = 980; Precision{ 10 } = 'float32'; OutputPrecision{ 10 } = 'float32'; MachineFormat{ 10 } = 'ieee-le'; ItemBytes( 10 ) = 4; ItemBits( 10 ) = 0;
+Parameter{ 11 } =              'ECHO_PHASE_B1'; OffsetBytes( 11 ) = 03958; OffsetBits( 11 ) = 0; Items( 11 ) = 980; Precision{ 11 } = 'float32'; OutputPrecision{ 11 } = 'float32'; MachineFormat{ 11 } = 'ieee-le'; ItemBytes( 11 ) = 4; ItemBits( 11 ) = 0;
+Parameter{ 12 } =            'ECHO_MODULUS_B2'; OffsetBytes( 12 ) = 07878; OffsetBits( 12 ) = 0; Items( 12 ) = 980; Precision{ 12 } = 'float32'; OutputPrecision{ 12 } = 'float32'; MachineFormat{ 12 } = 'ieee-le'; ItemBytes( 12 ) = 4; ItemBits( 12 ) = 0;
+Parameter{ 13 } =              'ECHO_PHASE_B2'; OffsetBytes( 13 ) = 11798; OffsetBits( 13 ) = 0; Items( 13 ) = 980; Precision{ 13 } = 'float32'; OutputPrecision{ 13 } = 'float32'; MachineFormat{ 13 } = 'ieee-le'; ItemBytes( 13 ) = 4; ItemBits( 13 ) = 0;
+Parameter{ 14 } =    'GEOMETRY_EPHEMERIS_TIME'; OffsetBytes( 14 ) = 15718; OffsetBits( 14 ) = 0; Items( 14 ) = 001; Precision{ 14 } = 'float64'; OutputPrecision{ 14 } = 'float64'; MachineFormat{ 14 } = 'ieee-le'; ItemBytes( 14 ) = 8; ItemBits( 14 ) = 0;
+Parameter{ 15 } =             'GEOMETRY_EPOCH'; OffsetBytes( 15 ) = 15726; OffsetBits( 15 ) = 0; Items( 15 ) = 023; Precision{ 15 } =    'char'; OutputPrecision{ 15 } =    'char'; MachineFormat{ 15 } = 'ieee-le'; ItemBytes( 15 ) = 1; ItemBits( 15 ) = 0;
+Parameter{ 16 } =       'MARS_SOLAR_LONGITUDE'; OffsetBytes( 16 ) = 15749; OffsetBits( 16 ) = 0; Items( 16 ) = 001; Precision{ 16 } = 'float64'; OutputPrecision{ 16 } = 'float64'; MachineFormat{ 16 } = 'ieee-le'; ItemBytes( 16 ) = 8; ItemBits( 16 ) = 0;
+Parameter{ 17 } =          'MARS_SUN_DISTANCE'; OffsetBytes( 17 ) = 15757; OffsetBits( 17 ) = 0; Items( 17 ) = 001; Precision{ 17 } = 'float64'; OutputPrecision{ 17 } = 'float64'; MachineFormat{ 17 } = 'ieee-le'; ItemBytes( 17 ) = 8; ItemBits( 17 ) = 0;
+Parameter{ 18 } =               'ORBIT_NUMBER'; OffsetBytes( 18 ) = 15765; OffsetBits( 18 ) = 0; Items( 18 ) = 001; Precision{ 18 } =  'uint32'; OutputPrecision{ 18 } =  'uint32'; MachineFormat{ 18 } = 'ieee-le'; ItemBytes( 18 ) = 4; ItemBits( 18 ) = 0;
+Parameter{ 19 } =                'TARGET_NAME'; OffsetBytes( 19 ) = 15769; OffsetBits( 19 ) = 0; Items( 19 ) = 006; Precision{ 19 } =    'char'; OutputPrecision{ 19 } =    'char'; MachineFormat{ 19 } = 'ieee-le'; ItemBytes( 19 ) = 1; ItemBits( 19 ) = 0;
+Parameter{ 20 } =  'TARGET_SC_POSITION_VECTOR'; OffsetBytes( 20 ) = 15775; OffsetBits( 20 ) = 0; Items( 20 ) = 003; Precision{ 20 } = 'float64'; OutputPrecision{ 20 } = 'float64'; MachineFormat{ 20 } = 'ieee-le'; ItemBytes( 20 ) = 8; ItemBits( 20 ) = 0;
+Parameter{ 21 } =        'SPACECRAFT_ALTITUDE'; OffsetBytes( 21 ) = 15799; OffsetBits( 21 ) = 0; Items( 21 ) = 001; Precision{ 21 } = 'float64'; OutputPrecision{ 21 } = 'float64'; MachineFormat{ 21 } = 'ieee-le'; ItemBytes( 21 ) = 8; ItemBits( 21 ) = 0;
+Parameter{ 22 } =           'SUB_SC_LONGITUDE'; OffsetBytes( 22 ) = 15807; OffsetBits( 22 ) = 0; Items( 22 ) = 001; Precision{ 22 } = 'float64'; OutputPrecision{ 22 } = 'float64'; MachineFormat{ 22 } = 'ieee-le'; ItemBytes( 22 ) = 8; ItemBits( 22 ) = 0;
+Parameter{ 23 } =            'SUB_SC_LATITUDE'; OffsetBytes( 23 ) = 15815; OffsetBits( 23 ) = 0; Items( 23 ) = 001; Precision{ 23 } = 'float64'; OutputPrecision{ 23 } = 'float64'; MachineFormat{ 23 } = 'ieee-le'; ItemBytes( 23 ) = 8; ItemBits( 23 ) = 0;
+Parameter{ 24 } =  'TARGET_SC_VELOCITY_VECTOR'; OffsetBytes( 24 ) = 15823; OffsetBits( 24 ) = 0; Items( 24 ) = 003; Precision{ 24 } = 'float64'; OutputPrecision{ 24 } = 'float64'; MachineFormat{ 24 } = 'ieee-le'; ItemBytes( 24 ) = 8; ItemBits( 24 ) = 0;
+Parameter{ 25 } =  'TARGET_SC_RADIAL_VELOCITY'; OffsetBytes( 25 ) = 15847; OffsetBits( 25 ) = 0; Items( 25 ) = 001; Precision{ 25 } = 'float64'; OutputPrecision{ 25 } = 'float64'; MachineFormat{ 25 } = 'ieee-le'; ItemBytes( 25 ) = 8; ItemBits( 25 ) = 0;
+Parameter{ 26 } =    'TARGET_SC_TANG_VELOCITY'; OffsetBytes( 26 ) = 15855; OffsetBits( 26 ) = 0; Items( 26 ) = 001; Precision{ 26 } = 'float64'; OutputPrecision{ 26 } = 'float64'; MachineFormat{ 26 } = 'ieee-le'; ItemBytes( 26 ) = 8; ItemBits( 26 ) = 0;
+Parameter{ 27 } =      'LOCAL_TRUE_SOLAR_TIME'; OffsetBytes( 27 ) = 15863; OffsetBits( 27 ) = 0; Items( 27 ) = 001; Precision{ 27 } = 'float64'; OutputPrecision{ 27 } = 'float64'; MachineFormat{ 27 } = 'ieee-le'; ItemBytes( 27 ) = 8; ItemBits( 27 ) = 0;
+Parameter{ 28 } =         'SOLAR_ZENITH_ANGLE'; OffsetBytes( 28 ) = 15871; OffsetBits( 28 ) = 0; Items( 28 ) = 001; Precision{ 28 } = 'float64'; OutputPrecision{ 28 } = 'float64'; MachineFormat{ 28 } = 'ieee-le'; ItemBytes( 28 ) = 8; ItemBits( 28 ) = 0;
+Parameter{ 29 } =         'DIPOLE_UNIT_VECTOR'; OffsetBytes( 29 ) = 15879; OffsetBits( 29 ) = 0; Items( 29 ) = 003; Precision{ 29 } = 'float64'; OutputPrecision{ 29 } = 'float64'; MachineFormat{ 29 } = 'ieee-le'; ItemBytes( 29 ) = 8; ItemBits( 29 ) = 0;
+Parameter{ 30 } =       'MONOPOLE_UNIT_VECTOR'; OffsetBytes( 30 ) = 15903; OffsetBits( 30 ) = 0; Items( 30 ) = 003; Precision{ 30 } = 'float64'; OutputPrecision{ 30 } = 'float64'; MachineFormat{ 30 } = 'ieee-le'; ItemBytes( 30 ) = 8; ItemBits( 30 ) = 0;
