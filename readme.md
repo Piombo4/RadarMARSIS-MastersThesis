@@ -25,16 +25,16 @@ The second part of the work focused on filtering the processed data using statis
 For the first two types of interference, algorithms were developed that automatically detect interferences in the images using OpenCV. For the last type, YOLO was used.
 <table style="border: none">
   <tr>
-    <td width="49.9%"><img src="./Documentation/hl_1"/></td>
-    <td width="49.9%"><img src="./Documentation/hl_2"/></td>
+    <td width="49.9%"><img src="./Documentation/hl_1.png"/></td>
+    <td width="49.9%"><img src="./Documentation/hl_2.PNG"/></td>
   </tr>
   <tr>
-    <td width="49.9%"><img src="./Documentation/c_1"/></td>
-    <td width="49.9%"><img src="./Documentation/c_2"/></td>
+    <td width="49.9%"><img src="./Documentation/c_1.png"/></td>
+    <td width="49.9%"><img src="./Documentation/c_2.PNG"/></td>
   </tr> 
    <tr>
-    <td width="49.9%"><img src="./Documentation/d_1"/></td>
-    <td width="49.9%"><img src="./Documentation/d_2"/></td>
+    <td width="49.9%"><img src="./Documentation/d_1.png"/></td>
+    <td width="49.9%"><img src="./Documentation/d_2.jpg"/></td>
   </tr>
 </table>
 
@@ -44,8 +44,8 @@ Then, to decide a threshold below which the median values are set to zero, Otsuâ
 Once the filtering is performed, it is sufficient to cal-culate the inverse transform and compare the signal-to-noise ratio before and after the cleaning operation. On 25 filtered orbits, an average increase of ~16 dB was observed.
 <table style="border: none">
   <tr>
-    <td width="49.9%"><img src="./Documentation/me_1"/></td>
-    <td width="49.9%"><img src="./Documentation/me_2"/></td>
+    <td width="49.9%"><img src="./Documentation/me_1.png"/></td>
+    <td width="49.9%"><img src="./Documentation/me_2.png"/></td>
   </tr>
 </table>
 
